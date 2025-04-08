@@ -1,0 +1,132 @@
+﻿sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls -ll
+total 20
+drwxrwxr-x 2 sunbeam sunbeam 4096 Apr  8 15:11 demo
+-rw-rw-r-- 1 sunbeam sunbeam   52 Apr  8 15:20 info.txt
+drwxrwxr-x 3 sunbeam sunbeam 4096 Apr  8 15:28 one
+-rw-rw-r-- 1 sunbeam sunbeam   63 Apr  8 14:59 temp2.txt
+-rw-rw-r-- 1 sunbeam sunbeam  134 Apr  8 14:32 temp.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls -lsr
+total 20
+4 -rw-rw-r-- 1 sunbeam sunbeam  134 Apr  8 14:32 temp.txt
+4 -rw-rw-r-- 1 sunbeam sunbeam   63 Apr  8 14:59 temp2.txt
+4 drwxrwxr-x 3 sunbeam sunbeam 4096 Apr  8 15:28 one
+4 -rw-rw-r-- 1 sunbeam sunbeam   52 Apr  8 15:20 info.txt
+4 drwxrwxr-x 2 sunbeam sunbeam 4096 Apr  8 15:11 demo
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls -i 
+272721 demo  272720 info.txt  272728 one  272626 temp2.txt  271562 temp.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls
+demo  info.txt  one  temp2.txt  temp.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls
+demo  info.txt  one  temp2.txt  temp.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rmdir one
+rmdir: failed to remove 'one': Directory not empty
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rm one
+rm: cannot remove 'one': Is a directory
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rmdir one/*
+rmdir: failed to remove 'one/111.txt': Not a directory
+rmdir: failed to remove 'one/11.txt': Not a directory
+rmdir: failed to remove 'one/1.txt': Not a directory
+rmdir: failed to remove 'one/two': Directory not empty
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rm -r
+rm: missing operand
+Try 'rm --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rmdir -r
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rm -r two
+rm: cannot remove 'two': No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rm -r one
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls
+demo  info.txt  temp2.txt  temp.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rm demo
+rm: cannot remove 'demo': Is a directory
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ rm -r demo
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cat>demo.txt
+kale prakash
+^C
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cat>>demo.txt ^C. post diskal tal.khatav dist.Satara 415504
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cat>demo.txt
+^C
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cat>>demo.txt
+at.post.diskal tal.khatav dist.satara 415504
+^C
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cat demo.txt
+at.post.diskal tal.khatav dist.satara 415504
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cat>>demo.txt
+kale
+prakash
+^C
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cat demo.txt
+at.post.diskal tal.khatav dist.satara 415504
+kale
+prakash
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ touch demo.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls
+demo.txt  info.txt  temp2.txt  temp.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls -l demo.txt
+-rw-rw-r-- 1 sunbeam sunbeam 58 Apr  8 17:42 demo.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ mkdir one
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cd one
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ touch 1.txt 11.txt 111.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ mkdir tow
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ cd two
+bash: cd: two: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ rmdir tow
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ mkdir two
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ cd two
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two$ touch 2.txt 22.txt 222.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two$ mkdir three
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two$ cd three
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three$ touch 3.txt 33.txt 333.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three$ mkdir four
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three$ cd four
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four$ touch 4.txt 44.txt 444.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four$ mkdir five
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four$ cd five
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ 5.txt 55.txt 555.txt
+5.txt: command not found
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ cd ~/one
+bash: cd: /home/sunbeam/one: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ cd ~/home
+bash: cd: /home/sunbeam/home: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ ^C
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls
+demo.txt  info.txt  one  temp2.txt  temp.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cd one
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ ls two/three/four/five
+555.txt  55.txt  5.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ cat >> two/three/four/44.txt
+prakash kale
+^C
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ rm two/three/four/five/555.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ cd two/three/four/five
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ cat>> ../../../three/3.txt
+DBDA
+^C
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ ls ../../../../two
+222.txt  22.txt  2.txt  three
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ cd ~/ one
+bash: cd: too many arguments
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ cd ~ one
+bash: cd: too many arguments
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one/two/three/four/five$ cd ../../../../../
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ pwd
+/home/sunbeam/Desktop/DBDA/Assignment1
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ ls
+demo.txt  info.txt  one  temp2.txt  temp.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1$ cd one
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ rm two/three/four/five/*
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ rmdir two/three/four/five
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ rm -r two/three/four
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ echo $HOME
+/home/sunbeam
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~/Desktop/DBDA/Assignment1/one$ cd ~
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~$ touch/Desktop/DBDA/Assignment1/one/two/three/3.txt
+bash: touch/Desktop/DBDA/Assignment1/one/two/three/3.txt: No such file or directory
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~$ touch Desktop/DBDA/Assignment1/one/two/three/3.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~$ ls -l Desktop/DBDA/Assignment1/one/two/three/3.txt
+-rw-rw-r-- 1 sunbeam sunbeam 5 Apr  8 18:35 Desktop/DBDA/Assignment1/one/two/three/3.txt
+sunbeam@sunbeam-HP-Pavilion-Laptop-14-dv1xxx:~$ 
