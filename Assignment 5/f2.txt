@@ -1,0 +1,9 @@
+fi
+echo "File is not present!"
+else
+ls -l $file
+then
+if [ -e $file ]
+read file
+echo "Enter the file name: "
+#!/bin/bash
